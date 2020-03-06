@@ -11,4 +11,9 @@
 |
 */
 
-Route::get('/','LoginController@index')->name('login');
+Route::get('/register', 'RegisterController@register');
+Route::post('/register/attempt', 'RegisterController@registerAttempt');
+Route::get('/','LoginController@index');
+Route::post('login-attempt','LoginController@loginAttempt');
+
+Route::get('dashboard','DashboardController@index');
