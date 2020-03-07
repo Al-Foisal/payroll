@@ -22,4 +22,11 @@ class LoginController extends Controller
     	session()->flash('message','Invalid Authentication');
     	return back();
     }
+
+    public function logout()
+    {
+        auth()->logout();
+        session()->flash('message','Logout successful');
+        return redirect('/');
+    }
 }

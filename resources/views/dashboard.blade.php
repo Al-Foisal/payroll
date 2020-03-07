@@ -1,1 +1,1 @@
-{{'foisal'}}
+@extends('layouts')
