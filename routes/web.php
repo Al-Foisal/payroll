@@ -26,6 +26,6 @@ Route::middleware(['auth','web'])->group(function(){
 	Route::get('department/create','DepartmentController@create');
 	Route::post('department/store','DepartmentController@store');
 	Route::get('department/edit','DepartmentController@edit');
-	Route::put('department/update','DepartmentController@update');
+	Route::put('department/{id}/update','DepartmentController@store');
 	Route::get('department/delete','DepartmentController@delete');
 });
